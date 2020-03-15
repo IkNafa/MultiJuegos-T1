@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MultiJuegos-T1</string>
+    <string name="usuario">User:</string>
+    <string name="contrasena">Password:</string>
+    <string name="noregistrado">Not registered yet?</string>
+    <string name="iniciarSesion">Sign in</string>
+    <string name="registro">SIGN UP</string>
+    <string name="repContrasena">Repeat password:</string>
+    <string name="msgCoincidir">Password must be the same</string>
+    <string name="nombreUsuarioPref">Username</string>
+    <string name="idiomaPref">Language</string>
+    <string name="nocturnoPref">Night mode</string>
+    <string name="ajustes">SETTINGS</string>
+    <string name="cerrarSesion">Log out</string>
+    <string name="msgCamposVacios">Fields can not be empty</string>
+    <string name="registrarme">Accept</string>
+    <string name="jugar">PLAY</string>
+    <string name="info">INFO</string>
+    <string name="dificil">HARD</string>
+    <string name="facil">EASY</string>
+    <string name="medio">MEDIUM</string>
+    <string name="msgCompartir">I have played a game in Multijuegos app!</string>
+    <string name="tocacompartir">Touch to share</string>
+    <string name="elegirDificultad">CHOOSE A DIFFICULTY LEVEL</string>
+    <string name="compartir">Share</string>
+    <string name="score">Score:</string>
+    <string name="hasperdido">YOU LOSE!</string>
+    <string name="hasganado">YOU WIN!</string>
+    <string name="partidafin">GAME FINISHED!</string>
+    <string name="no">No</string>
+    <string name="si">Yes</string>
+    <string name="msgSalir">Are you sure you want to exit?</string>
+    <string name="comprobar">Check</string>
+    <string name="muertos">DEADS:</string>
+    <string name="heridos">WOUNDED:</string>
+    <string name="intentosrestantes">REMAINING ATTEMPTS</string>
+    <string name="clasificacion">CLASSIFICATION</string>
+    <string name="clasificacion_juegos">CLASSIFICATION/GAME</string>
+</resources>

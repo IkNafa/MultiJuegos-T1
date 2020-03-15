@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#fcfcfc</item>
+        <item name="cardbackground">#ffffff</item>
+        <item name="textcolor">#808080</item>
+        <item name="tintcolor">#000000</item>
+        <item name="buttoncolor">#2196F3</item>
+        <item name="linkcolor">#0055FF</item>
+        <item name="leftRightButton">#CCCCCC</item>
+        <item name="toolbar_titleColor">#000000</item>
+        <item name="toolbar_background">@color/toolBarColor</item>
+        <item name="registroIcono">@drawable/ic_create</item>
+        <item name="icon_settings">@drawable/ic_settings</item>
+        <item name="icon_list">@drawable/ic_list</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="cardbackground">#424242</item>
+        <item name="textcolor">#ffffff</item>
+        <item name="tintcolor">#ffffff</item>
+        <item name="buttoncolor">#2196F3</item>
+        <item name="linkcolor">#0055FF</item>
+        <item name="leftRightButton">#CCCCCC</item>
+        <item name="toolbar_titleColor">#ffffff</item>
+        <item name="toolbar_background">#424242</item>
+        <item name="registroIcono">@drawable/ic_create_w</item>
+        <item name="icon_settings">@drawable/ic_settings_w</item>
+        <item name="icon_list">@drawable/ic_list_w</item>
+    </style>
+
+    <style name="windowAnimation">
+
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+
+
+
+
+
+</resources>

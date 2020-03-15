@@ -1,0 +1,17 @@
+[
+    {
+        "nombre":"Piedra, Papel, Tijera.",
+        "info": "Descripción del PPT",
+        "imagen":"ppt"
+    },
+    {
+        "nombre":"Carta más alta",
+        "info": "Descripción de CmA",
+        "imagen":"cma"
+    },
+    {
+        "nombre":"Numeros Muertos",
+        "info": "Descripción de los NM",
+        "imagen":"nm"
+    }
+]

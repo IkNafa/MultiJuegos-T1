@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="colores">
+        <attr name="backgroundcolor" format="color"/>
+        <attr name="cardbackground" format="color"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="tintcolor" format="color"/>
+        <attr name="buttoncolor" format="color"/>
+        <attr name="linkcolor" format="color"/>
+        <attr name="registroIcono" format="reference"/>
+        <attr name="leftRightButton" format="color" />
+        <attr name="icon_settings" format="reference" />
+        <attr name="icon_list" format="reference" />
+        <attr name="toolbar_background" format="color"/>
+        <attr name="toolbar_titleColor" format="color" />
+    </declare-styleable>
+
+</resources>

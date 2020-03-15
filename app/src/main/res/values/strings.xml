@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MultiJuegos-T1</string>
+    <string name="usuario">Usuario:</string>
+    <string name="contrasena">Contraseña:</string>
+    <string name="noregistrado">¿No estás registrado?</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="msgCamposVacios">Rellena todos los campos</string>
+    <string name="registro">REGISTRO</string>
+    <string name="repContrasena">Repetir Contraseña:</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="msgCoincidir">Las contraseñas deben coincidir</string>
+    <string name="nombreUsuarioPref">Nombre de usuario</string>
+    <string name="idiomaPref">Idioma</string>
+    <string name="nocturnoPref">Modo noche</string>
+    <string name="ajustes">AJUSTES</string>
+    <string name="cerrarSesion">Cerrar sesión</string>
+    <string name="jugar">JUGAR</string>
+    <string name="info">INFO</string>
+    <string name="intentosrestantes">INTENTOS RESTANTES:</string>
+    <string name="heridos">HERIDOS:</string>
+    <string name="muertos">MUERTOS:</string>
+    <string name="comprobar">Comprobar</string>
+    <string name="msgSalir">¿Estás seguro de que quieres salir?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="partidafin">¡PARTIDA FINALIZADA!</string>
+    <string name="hasganado">¡HAS GANADO!</string>
+    <string name="hasperdido">¡HAS PERDIDO!</string>
+    <string name="score">Puntuación: </string>
+    <string name="compartir">Compartir</string>
+    <string name="elegirDificultad">ELIGE UNA DIFICULTAD</string>
+    <string name="facil">FACIL</string>
+    <string name="medio">MEDIO</string>
+    <string name="dificil">DIFICIL</string>
+    <string name="msgCompartir">¡He jugado a un juego de la aplicación Multijuegos!</string>
+    <string name="tocacompartir">Toca para compartir</string>
+    <string name="clasificacion_juegos">CLASIFICACION/JUEGOS</string>
+    <string name="clasificacion">CLASIFICACION</string>
+
+</resources>

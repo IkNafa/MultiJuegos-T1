@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.NumerosMuertos">
+
+    <TextView
+        android:id="@+id/tituloNM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/intentosrestantes"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="182dp"
+        android:text="50"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNM" />
+
+    <EditText
+        android:id="@+id/edtIntento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numRest" />
+
+    <TextView
+        android:id="@+id/txtHeridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:drawableStart="@drawable/ic_healing"
+        android:text="@string/heridos"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtIntento" />
+
+    <TextView
+        android:id="@+id/txtMuertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/ic_skull"
+        android:text="@string/muertos"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeridos" />
+
+    <TextView
+        android:id="@+id/txtNumHeridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="247dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHeridos"
+        app:layout_constraintTop_toBottomOf="@+id/edtIntento" />
+
+    <TextView
+        android:id="@+id/txtNumMuertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="237dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMuertos"
+        app:layout_constraintTop_toBottomOf="@+id/edtIntento" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/comprobar"
+        android:onClick="comprobarIntento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMuertos" />
+
+    <ListView
+        android:id="@+id/listViewIntentos"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprobar"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

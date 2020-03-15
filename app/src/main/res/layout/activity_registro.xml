@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".view.Registro">
+
+    <TextView
+        android:id="@+id/txtTituloRegistro"
+        android:layout_width="197dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="56dp"
+        android:drawableStart="?attr/registroIcono"
+        android:text="@string/registro"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:textColor="?attr/textcolor"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/usuario"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloRegistro" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+
+    <EditText
+        android:id="@+id/edtRepPass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRepContrasena" />
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/contrasena"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUser" />
+
+    <TextView
+        android:id="@+id/txtRepContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/repContrasena"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPass" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="116dp"
+        android:drawableStart="@drawable/ic_person_add"
+        android:onClick="registrarUsuario"
+        android:background="?attr/buttoncolor"
+        android:text="@string/registrarme"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtRepPass"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageButton
+        android:id="@+id/btnFotoPerfil"
+        android:layout_width="99dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="29dp"
+        android:onClick="elegirFotoPerfil"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtTituloRegistro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

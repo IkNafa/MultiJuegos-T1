@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Clasificacion">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/toolBarColor"
+        app:titleTextColor="@android:color/black"
+        app:title="@string/clasificacion_juegos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/frmnt_listajuegos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.multijuegos_t1.view.Clasificacion_Juegos"
+        tools:layout="@layout/fragment_clasificacion_juegos"/>
+
+</LinearLayout>

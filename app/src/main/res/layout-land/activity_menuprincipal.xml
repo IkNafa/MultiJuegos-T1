@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/backgroundcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/toolbar_background"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="?attr/toolbar_titleColor" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="214dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="MULTI JUEGOS"
+        android:textSize="30sp"
+        android:textColor="?attr/textcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="?attr/cardbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="160dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="27dp"
+                android:adjustViewBounds="false"
+                android:background="?attr/buttoncolor"
+                android:drawableStart="@drawable/ic_info"
+                android:onClick="mostrarInfo"
+                android:text="@string/info"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/bntRight"
+                app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="160dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="67dp"
+                android:adjustViewBounds="false"
+                android:background="?attr/buttoncolor"
+                android:drawableStart="@drawable/ic_play"
+                android:onClick="abrirJuego"
+                android:text="@string/jugar"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                app:layout_constraintStart_toEndOf="@+id/bntRight"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgJuego"
+                android:layout_width="172dp"
+                android:layout_height="175dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="41dp"
+                app:layout_constraintEnd_toStartOf="@+id/bntRight"
+                app:layout_constraintStart_toEndOf="@+id/btnLeft"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="105dp"
+                android:onClick="leftGame"
+                android:background="?attr/leftRightButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+            <ImageButton
+                android:id="@+id/bntRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/leftRightButton"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="105dp"
+                android:onClick="rightGame"
+                app:layout_constraintStart_toEndOf="@+id/imgJuego"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_right_arrow" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
